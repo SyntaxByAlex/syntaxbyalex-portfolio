@@ -1,0 +1,16 @@
+<dashboard-dashboard-mobile [isMenuMobile]="isMenuMobile" (onToggleMenuMobileEvent)="toggleMenuMobile()"/>
+
+<div class="header_mobile">
+    <div>
+        <img class="header_mobile_logo"
+            src="https://www.shutterstock.com/shutterstock/photos/2250296909/display_1500/stock-vector-it-is-an-element-suitable-for-various-types-of-graphic-designs-such-as-company-logos-business-2250296909.jpg"
+            alt="Logo">
+    </div>
+    <div>
+        <i-tabler class="header_mobile_menu-icon" name="menu-2" (click)="toggleMenuMobile()"></i-tabler>
+    </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
