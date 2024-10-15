@@ -1,4 +1,4 @@
-<dashboard-dashboard-mobile [isMenuMobile]="isMenuMobile" (onToggleMenuMobileEvent)="toggleMenuMobile()"/>
+<dashboard-dashboard-mobile [isMenuMobile]="isMenuMobile()" (onToggleMenuMobileEvent)="toggleMenuMobile()"/>
 
 <div class="header_mobile">
     <div>
@@ -10,7 +10,6 @@
         <i-tabler class="header_mobile_menu-icon" name="menu-2" (click)="toggleMenuMobile()"></i-tabler>
     </div>
 </div>
-
 
 
 <router-outlet></router-outlet>

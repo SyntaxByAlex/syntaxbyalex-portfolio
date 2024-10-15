@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { IconsModule } from '../icons/icons.module';
 import { DashboardMobileComponent } from './components/dashboard-mobile/dashboard-mobile.component';
@@ -17,9 +17,9 @@ import { DashboardMobileComponent } from './components/dashboard-mobile/dashboar
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DashboardComponent {
-  public isMenuMobile: boolean = false;
+  public isMenuMobile = signal(false);
 
   public toggleMenuMobile() {
-    this.isMenuMobile = !this.isMenuMobile;
+    this.isMenuMobile.set(!this.isMenuMobile());
   }
 }
