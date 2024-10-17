@@ -12,8 +12,8 @@ export const routes: Routes = [
                 loadComponent: () => import('./dashboard/pages/about-me/about-me.component').then(m => m.AboutMeComponent)
             },
             {
-                path: 'proyects',
-                title: 'Proyects',
+                path: 'projects',
+                title: 'Projects',
                 loadComponent: () => import('./dashboard/pages/proyects/proyects.component').then(m => m.ProyectsComponent)
             },
             {

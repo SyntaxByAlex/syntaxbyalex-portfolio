@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { IconsModule } from '../../../icons/icons.module';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'dashboard-dashboard-mobile',
@@ -18,6 +19,13 @@ export class DashboardMobileComponent {
 
   @Input() isMenuMobile: boolean = false;
   @Output() onToggleMenuMobileEvent = new EventEmitter();
+  public router = inject(Router)
+
+  public goToUrl(url: string): void {
+    this.router.navigateByUrl(url)
+    this.onToggleMenuMobileEvent.emit();
+  }
+
   public toggleMenuMobile() {
     this.onToggleMenuMobileEvent.emit();
   }
