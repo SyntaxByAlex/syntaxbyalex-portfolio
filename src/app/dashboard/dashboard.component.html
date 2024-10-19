@@ -1,0 +1,10 @@
+<div class="dashboard-container">
+    <dashboard-dashboard-mobile class="header_mobile" [isMenuMobile]="isMenuMobile()"
+        (onToggleMenuMobileEvent)="toggleMenuMobile()" />
+
+    <dashboard-desktop class="header_desktop" />
+
+    <div style="overflow: auto;">
+        <router-outlet></router-outlet>
+    </div>
+</div>

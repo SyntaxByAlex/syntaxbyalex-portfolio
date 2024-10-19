@@ -1,0 +1,18 @@
+.card-level {
+  width: 140px;
+  border: solid 2px var(--background-secundary-color);
+  border-radius: 10px;
+  text-align: center;
+  padding: 7px 10px 7px 10px;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.card-level:hover {
+  width: 140px;
+  color: var(--text-secondary-color);
+  border: solid 2px var(--text-secondary-color);
+  background-color: var(--background-secundary-color);
+  transition: 200ms;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.card-project {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--background-secundary-color);
+  color: var(--text-secondary-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.card-description {
+  font-size: 17px;
+}
+
+.card-skill {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}

@@ -1,0 +1,32 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 99vw;
+  height: 99vh;
+}
+
+.header_mobile {
+  display: block;
+}
+
+.header_desktop {
+  display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .dashboard-container {
+    flex-direction: row;
+  }
+
+  .header_mobile {
+    display: none;
+  }
+
+  .header_desktop {
+    display: block;
+  }
+}
