@@ -1,3 +1,13 @@
+<div class="header_mobile">
+    <div>
+        <img class="header_mobile_logo" src="assets/images/syntax-by-alex-logo.webp" alt="Logo">
+    </div>
+    <div>
+        <i-tabler class="header_mobile_menu-icon" name="menu-2" (click)="toggleMenuMobile()"></i-tabler>
+    </div>
+</div>
+
+
 <div class="menu_mobile" [ngClass]="{'menu_mobile_visible': isMenuMobile}">
     <i-tabler class="menu_mobile_icon" name="x" (click)="toggleMenuMobile()"></i-tabler>
 
@@ -7,6 +17,9 @@
         </li>
         <li>
             <a (click)="goToUrl('/dashboard/projects')">Proyectos</a>
+        </li>
+        <li>
+            <a (click)="goToUrl('/dashboard/contact-me')">Contact me</a>
         </li>
 
     </ul>

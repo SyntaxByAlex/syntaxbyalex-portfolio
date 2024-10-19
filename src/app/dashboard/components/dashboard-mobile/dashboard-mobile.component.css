@@ -36,7 +36,8 @@
   list-style: none;
   padding: 0;
   font-size: 30px;
-  font: weight 500px;;
+  font: weight 500px;
+  ;
 }
 
 .menu_mobile_list li {
@@ -51,4 +52,21 @@
   background-color: var(--background-color);
   border-radius: 10px;
   cursor: pointer;
+}
+
+.header_mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 10px 10px;
+  align-items: center;
+}
+
+.header_mobile_logo {
+  width: 150px;
+  height: 40px;
+}
+
+.header_mobile_menu-icon {
+  width: 40px;
+  height: 40px;
 }
